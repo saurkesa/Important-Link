@@ -1,0 +1,13 @@
+https://github.com/saurkesa/Important-Link/new/master
+
+Step 1)Install Chocolatey
+a)https://chocolatey.org/install
+
+https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows
+
+b)Get-ExecutionPolicy
+c)Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+d)chmod 600 ~/.kdk/ssh/id_rsa
+ 
+ 
+Set-ExecutionPolicy Bypass -Scope Process -Force iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/cisco-sso/kdk/master/files/install.ps1'))
