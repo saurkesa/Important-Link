@@ -1,0 +1,40 @@
+rebase
+
+Git pull at master branch 
+Come in dcn branch  
+git rebase master DCN 
+after resolving conflict 
+Git add files 
+git rebase –-continue 
+git push -u origin DCN –f  
+
+
+
+
+git clone banch name
+git pull
+Git checkout –b branch name 
+
+Git fetch 
+Git merge origin/master 
+or
+git pull
+
+git commit -m "message"
+git push
+
+============
+
+Branch created from master  
+
+ 
+
+Git checkout –b branch name 
+Git fetch 
+Git merge origin/master 
+
+ 
+Pull at specific branch 
+Git checkout branch name 
+Git pull origin DCN 
+Git push –u origin DCN 
