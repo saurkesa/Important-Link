@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/19875218/best-way-to-format-large-json-file-30-mb
+
+With python >= 2.6 you can do the following:
+
+For Mac/Linux users:
+
+cat ugly.json | python -m json.tool > pretty.json
+For Windows users (thanks to the comment from dnk.nitro):
+
+type ugly.json | python -m json.tool > pretty.json
