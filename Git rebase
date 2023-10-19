@@ -38,3 +38,8 @@ Pull at specific branch
 Git checkout branch name 
 Git pull origin DCN 
 Git push –u origin DCN 
+
+merge two commit into single commit
+
+
+git rebase -i HEAD~2
