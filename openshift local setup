@@ -1,0 +1,82 @@
+
+redhat :saurkesa ,Saurabh@Kesarwani
+
+openshift local setup
+====================================
+local
+ install this openshift clent window ( to run oc command)
+instal crc ---------- it will take time(download from redhat)
+crc daemon
+crc start -------- this will take time
+give pull secret
+oc login -u developer -p developer https://api.crc.testing:6443
+stop
+
+
+==========================
+
+The server is accessible via web console at:
+  https://console-openshift-console.apps-crc.testing
+
+Log in as administrator:
+  Username: kubeadmin
+  Password: pgtQK-Iqxiy-iNMgG-amvCQ
+
+Log in as user:
+  Username: developer
+  Password: developer
+  
+  ===========================================================
+CRC stands for CodeReady Containers, which is a tool provided by Red Hat to help developers run a local OpenShift cluster on their personal machines.
+It’s primarily designed for developers who want to test, experiment, and develop applications for OpenShift without needing a full-fledged OpenShift 
+cluster hosted in the cloud or on-premises.
+
+A pull secret is basically a JSON file that contains credentials used to authenticate against Red Hat’s container image registry (registry.redhat.io).
+OpenShift uses this registry to pull the official Red Hat container images (like the cluster components, operators, and more). Without the pull secret,
+OpenShift won’t be able to download these images.
+
+==================================================================================
+
+login
+🌐 Web Console Login
+1. Open your browser and go to:
+arduino
+Copy
+Edit
+https://console-openshift-console.apps-crc.testing
+⚠️ You might get a "Security Warning" because the SSL certificate is self-signed (since it’s a local setup). 
+Just click "Advanced" → "Proceed anyway" to continue.
+
+2. Use either of these credentials:
+🔐 Admin Login:
+Username: kubeadmin
+
+Password: pgtQK-Iqxiy-iNMgG-amvCQ (your actual kubeadmin password)
+
+👩‍💻 Developer Login:
+Username: developer
+
+Password: developer
+
+💡 Use kubeadmin if you want full admin control over the cluster.
+
+💻 CLI Login (Using oc)
+If you're using the OpenShift CLI (oc), here’s how to log in:
+
+1. Get the cluster URL from the output (should be like this):
+bash
+Copy
+Edit
+https://api.crc.testing:6443
+2. Log in as admin:
+bash
+Copy
+Edit
+oc login -u kubeadmin -p pgtQK-Iqxiy-iNMgG-amvCQ https://api.crc.testing:6443
+Or as developer:
+
+bash
+Copy
+Edit
+oc login -u developer -p developer https://api.crc.testing:6443
+==============================================================================
